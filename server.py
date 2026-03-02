@@ -18,18 +18,27 @@ def get_best_audio_url(video_id):
         'quiet': True,
         'no_warnings': True,
         'extract_flat': False,
+        'nocheckcertificate': True,
+        'ignoreerrors': False,
+        'logtostderr': False,
+        'add_header': [
+            'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
+        ],
     }
     
     with yt_dlp.YoutubeDL(ydl_opts) as ydl:
         try:
             info = ydl.extract_info(url, download=False)
+            if not info:
+                return None, "No info extracted"
             stream_url = info.get('url')
-            ext = info.get('ext')
-            print(f"Extracted URL ({ext}): {stream_url}")
-            return stream_url
+            if not stream_url:
+                return None, "No URL in info"
+            return stream_url, None
         except Exception as e:
-            print(f"yt-dlp error: {e}")
-            return None
+            error_msg = str(e)
+            print(f"yt-dlp error: {error_msg}")
+            return None, error_msg
 
 @app.route('/get_stream_url', methods=['GET'])
 def get_stream_url():
@@ -39,17 +48,18 @@ def get_stream_url():
         
     try:
         logging.info(f"Received request for videoId: {video_id}")
-        stream_url = get_best_audio_url(video_id)
+        stream_url, error = get_best_audio_url(video_id)
         if stream_url:
             logging.info(f"Successfully extracted URL for {video_id}")
             return jsonify({'url': stream_url})
         else:
-            logging.error(f"Failed to extract stream URL for {video_id}")
-            return jsonify({'error': 'Failed to extract stream URL'}), 500
+            logging.error(f"Failed to extract stream URL for {video_id}: {error}")
+            return jsonify({'error': 'Failed to extract stream URL', 'details': error}), 500
     except Exception as e:
-        logging.error(f"Exception during extraction for {video_id}: {e}")
+        error_msg = str(e)
+        logging.error(f"Exception during extraction for {video_id}: {error_msg}")
         traceback.print_exc()
-        return jsonify({'error': str(e)}), 500
+        return jsonify({'error': error_msg}), 500
 
 if __name__ == '__main__':
     import os
