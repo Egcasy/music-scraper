@@ -1,0 +1,205 @@
+2026-03-02 23:23:51,830 INFO:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://10.15.52.41:5001
+2026-03-02 23:23:51,830 INFO:[33mPress CTRL+C to quit[0m
+2026-03-02 23:24:35,158 INFO:Received request for videoId: m8dV-KHBpEs
+2026-03-02 23:24:43,775 INFO:Successfully extracted URL for m8dV-KHBpEs
+2026-03-02 23:24:43,775 INFO:127.0.0.1 - - [02/Mar/2026 23:24:43] "GET /get_stream_url?videoId=m8dV-KHBpEs HTTP/1.1" 200 -
+2026-03-02 23:24:43,806 INFO:Received request for videoId: bYYjCa3Jztw
+2026-03-02 23:24:50,919 INFO:Successfully extracted URL for bYYjCa3Jztw
+2026-03-02 23:24:50,920 INFO:127.0.0.1 - - [02/Mar/2026 23:24:50] "GET /get_stream_url?videoId=bYYjCa3Jztw HTTP/1.1" 200 -
+2026-03-02 23:24:50,952 INFO:Received request for videoId: PwhyTsGW7_c
+2026-03-02 23:24:55,209 INFO:Successfully extracted URL for PwhyTsGW7_c
+2026-03-02 23:24:55,209 INFO:127.0.0.1 - - [02/Mar/2026 23:24:55] "GET /get_stream_url?videoId=PwhyTsGW7_c HTTP/1.1" 200 -
+2026-03-02 23:24:55,237 INFO:Received request for videoId: ekm4X0Qig5Q
+2026-03-02 23:25:00,490 ERROR:Failed to extract stream URL for ekm4X0Qig5Q
+2026-03-02 23:25:00,490 INFO:127.0.0.1 - - [02/Mar/2026 23:25:00] "[35m[1mGET /get_stream_url?videoId=ekm4X0Qig5Q HTTP/1.1[0m" 500 -
+2026-03-02 23:25:34,236 INFO:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://10.15.52.41:5001
+2026-03-02 23:25:34,236 INFO:[33mPress CTRL+C to quit[0m
+2026-03-02 23:26:04,832 INFO:Received request for videoId: m8dV-KHBpEs
+2026-03-02 23:26:08,256 INFO:Successfully extracted URL for m8dV-KHBpEs
+2026-03-02 23:26:08,257 INFO:127.0.0.1 - - [02/Mar/2026 23:26:08] "GET /get_stream_url?videoId=m8dV-KHBpEs HTTP/1.1" 200 -
+2026-03-02 23:26:08,376 INFO:Received request for videoId: bYYjCa3Jztw
+2026-03-02 23:26:11,257 INFO:Successfully extracted URL for bYYjCa3Jztw
+2026-03-02 23:26:11,257 INFO:127.0.0.1 - - [02/Mar/2026 23:26:11] "GET /get_stream_url?videoId=bYYjCa3Jztw HTTP/1.1" 200 -
+2026-03-02 23:26:11,327 INFO:Received request for videoId: PwhyTsGW7_c
+2026-03-02 23:26:14,648 INFO:Successfully extracted URL for PwhyTsGW7_c
+2026-03-02 23:26:14,649 INFO:127.0.0.1 - - [02/Mar/2026 23:26:14] "GET /get_stream_url?videoId=PwhyTsGW7_c HTTP/1.1" 200 -
+2026-03-02 23:26:14,725 INFO:Received request for videoId: FiWklAVZldY
+2026-03-02 23:26:18,823 INFO:Successfully extracted URL for FiWklAVZldY
+2026-03-02 23:26:18,824 INFO:127.0.0.1 - - [02/Mar/2026 23:26:18] "GET /get_stream_url?videoId=FiWklAVZldY HTTP/1.1" 200 -
+2026-03-02 23:26:19,761 INFO:Received request for videoId: MBrNCbYkPCQ
+2026-03-02 23:26:24,590 INFO:Successfully extracted URL for MBrNCbYkPCQ
+2026-03-02 23:26:24,591 INFO:127.0.0.1 - - [02/Mar/2026 23:26:24] "GET /get_stream_url?videoId=MBrNCbYkPCQ HTTP/1.1" 200 -
+2026-03-02 23:26:24,683 INFO:Received request for videoId: WfHbRILc1I8
+2026-03-02 23:26:30,498 INFO:Successfully extracted URL for WfHbRILc1I8
+2026-03-02 23:26:30,499 INFO:127.0.0.1 - - [02/Mar/2026 23:26:30] "GET /get_stream_url?videoId=WfHbRILc1I8 HTTP/1.1" 200 -
+2026-03-02 23:26:30,623 INFO:Received request for videoId: pQcHGGOzUWU
+2026-03-02 23:26:41,015 INFO:Successfully extracted URL for pQcHGGOzUWU
+2026-03-02 23:26:41,016 INFO:127.0.0.1 - - [02/Mar/2026 23:26:41] "GET /get_stream_url?videoId=pQcHGGOzUWU HTTP/1.1" 200 -
+2026-03-02 23:26:41,090 INFO:Received request for videoId: GbfXdy2gXvg
+2026-03-02 23:26:43,810 INFO:Received request for videoId: m8dV-KHBpEs
+2026-03-02 23:26:45,538 INFO:Successfully extracted URL for GbfXdy2gXvg
+2026-03-02 23:26:45,539 INFO:127.0.0.1 - - [02/Mar/2026 23:26:45] "GET /get_stream_url?videoId=GbfXdy2gXvg HTTP/1.1" 200 -
+2026-03-02 23:26:45,694 INFO:Received request for videoId: gb5m7WFLIT4
+2026-03-02 23:26:48,206 INFO:Received request for videoId: m8dV-KHBpEs
+2026-03-02 23:26:49,879 INFO:Successfully extracted URL for m8dV-KHBpEs
+2026-03-02 23:26:49,880 INFO:127.0.0.1 - - [02/Mar/2026 23:26:49] "GET /get_stream_url?videoId=m8dV-KHBpEs HTTP/1.1" 200 -
+2026-03-02 23:26:49,988 INFO:Received request for videoId: bYYjCa3Jztw
+2026-03-02 23:26:51,117 INFO:Successfully extracted URL for gb5m7WFLIT4
+2026-03-02 23:26:51,117 INFO:127.0.0.1 - - [02/Mar/2026 23:26:51] "GET /get_stream_url?videoId=gb5m7WFLIT4 HTTP/1.1" 200 -
+2026-03-02 23:26:51,226 INFO:Received request for videoId: cM33s50feL4
+2026-03-02 23:26:53,198 INFO:Successfully extracted URL for m8dV-KHBpEs
+2026-03-02 23:26:53,199 INFO:127.0.0.1 - - [02/Mar/2026 23:26:53] "GET /get_stream_url?videoId=m8dV-KHBpEs HTTP/1.1" 200 -
+2026-03-02 23:26:53,291 INFO:Received request for videoId: bYYjCa3Jztw
+2026-03-02 23:26:55,111 INFO:Successfully extracted URL for bYYjCa3Jztw
+2026-03-02 23:26:55,112 INFO:127.0.0.1 - - [02/Mar/2026 23:26:55] "GET /get_stream_url?videoId=bYYjCa3Jztw HTTP/1.1" 200 -
+2026-03-02 23:26:55,672 INFO:Received request for videoId: PwhyTsGW7_c
+2026-03-02 23:26:58,094 INFO:Received request for videoId: m8dV-KHBpEs
+2026-03-02 23:27:00,367 INFO:Successfully extracted URL for cM33s50feL4
+2026-03-02 23:27:00,384 INFO:127.0.0.1 - - [02/Mar/2026 23:27:00] "GET /get_stream_url?videoId=cM33s50feL4 HTTP/1.1" 200 -
+2026-03-02 23:27:00,643 INFO:Successfully extracted URL for bYYjCa3Jztw
+2026-03-02 23:27:00,643 INFO:127.0.0.1 - - [02/Mar/2026 23:27:00] "GET /get_stream_url?videoId=bYYjCa3Jztw HTTP/1.1" 200 -
+2026-03-02 23:27:01,176 INFO:Successfully extracted URL for m8dV-KHBpEs
+2026-03-02 23:27:01,189 INFO:127.0.0.1 - - [02/Mar/2026 23:27:01] "GET /get_stream_url?videoId=m8dV-KHBpEs HTTP/1.1" 200 -
+2026-03-02 23:27:01,277 INFO:Successfully extracted URL for PwhyTsGW7_c
+2026-03-02 23:27:01,278 INFO:127.0.0.1 - - [02/Mar/2026 23:27:01] "GET /get_stream_url?videoId=PwhyTsGW7_c HTTP/1.1" 200 -
+2026-03-02 23:27:02,094 INFO:Received request for videoId: PwhyTsGW7_c
+2026-03-02 23:27:02,165 INFO:Received request for videoId: bYYjCa3Jztw
+2026-03-02 23:27:02,168 INFO:Received request for videoId: FiWklAVZldY
+2026-03-02 23:27:04,838 INFO:Successfully extracted URL for PwhyTsGW7_c
+2026-03-02 23:27:04,839 INFO:127.0.0.1 - - [02/Mar/2026 23:27:04] "GET /get_stream_url?videoId=PwhyTsGW7_c HTTP/1.1" 200 -
+2026-03-02 23:27:04,907 INFO:Received request for videoId: FiWklAVZldY
+2026-03-02 23:27:05,295 INFO:Successfully extracted URL for FiWklAVZldY
+2026-03-02 23:27:05,296 INFO:127.0.0.1 - - [02/Mar/2026 23:27:05] "GET /get_stream_url?videoId=FiWklAVZldY HTTP/1.1" 200 -
+2026-03-02 23:27:05,471 INFO:Received request for videoId: MBrNCbYkPCQ
+2026-03-02 23:27:05,864 INFO:Successfully extracted URL for bYYjCa3Jztw
+2026-03-02 23:27:05,865 INFO:127.0.0.1 - - [02/Mar/2026 23:27:05] "GET /get_stream_url?videoId=bYYjCa3Jztw HTTP/1.1" 200 -
+2026-03-02 23:27:06,001 INFO:Received request for videoId: PwhyTsGW7_c
+2026-03-02 23:27:07,687 INFO:Successfully extracted URL for FiWklAVZldY
+2026-03-02 23:27:07,688 INFO:127.0.0.1 - - [02/Mar/2026 23:27:07] "GET /get_stream_url?videoId=FiWklAVZldY HTTP/1.1" 200 -
+2026-03-02 23:27:07,971 INFO:Received request for videoId: MBrNCbYkPCQ
+2026-03-02 23:27:08,339 INFO:Successfully extracted URL for MBrNCbYkPCQ
+2026-03-02 23:27:08,340 INFO:127.0.0.1 - - [02/Mar/2026 23:27:08] "GET /get_stream_url?videoId=MBrNCbYkPCQ HTTP/1.1" 200 -
+2026-03-02 23:27:08,583 INFO:Received request for videoId: WfHbRILc1I8
+2026-03-02 23:27:08,841 INFO:Successfully extracted URL for PwhyTsGW7_c
+2026-03-02 23:27:08,842 INFO:127.0.0.1 - - [02/Mar/2026 23:27:08] "GET /get_stream_url?videoId=PwhyTsGW7_c HTTP/1.1" 200 -
+2026-03-02 23:27:08,991 INFO:Received request for videoId: FiWklAVZldY
+2026-03-02 23:27:10,786 INFO:Successfully extracted URL for MBrNCbYkPCQ
+2026-03-02 23:27:10,787 INFO:127.0.0.1 - - [02/Mar/2026 23:27:10] "GET /get_stream_url?videoId=MBrNCbYkPCQ HTTP/1.1" 200 -
+2026-03-02 23:27:10,954 INFO:Received request for videoId: WfHbRILc1I8
+2026-03-02 23:27:12,490 INFO:Successfully extracted URL for FiWklAVZldY
+2026-03-02 23:27:12,491 INFO:127.0.0.1 - - [02/Mar/2026 23:27:12] "GET /get_stream_url?videoId=FiWklAVZldY HTTP/1.1" 200 -
+2026-03-02 23:27:12,605 INFO:Received request for videoId: MBrNCbYkPCQ
+2026-03-02 23:27:13,139 INFO:Successfully extracted URL for WfHbRILc1I8
+2026-03-02 23:27:13,140 INFO:127.0.0.1 - - [02/Mar/2026 23:27:13] "GET /get_stream_url?videoId=WfHbRILc1I8 HTTP/1.1" 200 -
+2026-03-02 23:27:14,136 INFO:Received request for videoId: pQcHGGOzUWU
+2026-03-02 23:27:14,629 INFO:Successfully extracted URL for WfHbRILc1I8
+2026-03-02 23:27:14,629 INFO:127.0.0.1 - - [02/Mar/2026 23:27:14] "GET /get_stream_url?videoId=WfHbRILc1I8 HTTP/1.1" 200 -
+2026-03-02 23:27:14,912 INFO:Received request for videoId: pQcHGGOzUWU
+2026-03-02 23:27:15,345 INFO:Successfully extracted URL for MBrNCbYkPCQ
+2026-03-02 23:27:15,345 INFO:127.0.0.1 - - [02/Mar/2026 23:27:15] "GET /get_stream_url?videoId=MBrNCbYkPCQ HTTP/1.1" 200 -
+2026-03-02 23:27:15,566 INFO:Received request for videoId: WfHbRILc1I8
+2026-03-02 23:27:17,904 INFO:Successfully extracted URL for pQcHGGOzUWU
+2026-03-02 23:27:17,905 INFO:127.0.0.1 - - [02/Mar/2026 23:27:17] "GET /get_stream_url?videoId=pQcHGGOzUWU HTTP/1.1" 200 -
+2026-03-02 23:27:18,604 INFO:Received request for videoId: GbfXdy2gXvg
+2026-03-02 23:27:18,997 INFO:Successfully extracted URL for pQcHGGOzUWU
+2026-03-02 23:27:19,005 INFO:127.0.0.1 - - [02/Mar/2026 23:27:19] "GET /get_stream_url?videoId=pQcHGGOzUWU HTTP/1.1" 200 -
+2026-03-02 23:27:19,312 INFO:Successfully extracted URL for WfHbRILc1I8
+2026-03-02 23:27:19,313 INFO:127.0.0.1 - - [02/Mar/2026 23:27:19] "GET /get_stream_url?videoId=WfHbRILc1I8 HTTP/1.1" 200 -
+2026-03-02 23:27:19,776 INFO:Received request for videoId: GbfXdy2gXvg
+2026-03-02 23:27:19,851 INFO:Received request for videoId: pQcHGGOzUWU
+2026-03-02 23:27:23,356 INFO:Successfully extracted URL for pQcHGGOzUWU
+2026-03-02 23:27:23,357 INFO:127.0.0.1 - - [02/Mar/2026 23:27:23] "GET /get_stream_url?videoId=pQcHGGOzUWU HTTP/1.1" 200 -
+2026-03-02 23:27:23,683 INFO:Received request for videoId: GbfXdy2gXvg
+2026-03-02 23:27:24,076 INFO:Successfully extracted URL for GbfXdy2gXvg
+2026-03-02 23:27:24,078 INFO:127.0.0.1 - - [02/Mar/2026 23:27:24] "GET /get_stream_url?videoId=GbfXdy2gXvg HTTP/1.1" 200 -
+2026-03-02 23:27:24,081 INFO:Successfully extracted URL for GbfXdy2gXvg
+2026-03-02 23:27:24,082 INFO:127.0.0.1 - - [02/Mar/2026 23:27:24] "GET /get_stream_url?videoId=GbfXdy2gXvg HTTP/1.1" 200 -
+2026-03-02 23:27:24,236 INFO:Received request for videoId: gb5m7WFLIT4
+2026-03-02 23:27:24,259 INFO:Received request for videoId: gb5m7WFLIT4
+2026-03-02 23:27:25,972 INFO:Successfully extracted URL for GbfXdy2gXvg
+2026-03-02 23:27:25,974 INFO:127.0.0.1 - - [02/Mar/2026 23:27:25] "GET /get_stream_url?videoId=GbfXdy2gXvg HTTP/1.1" 200 -
+2026-03-02 23:27:26,456 INFO:Received request for videoId: gb5m7WFLIT4
+2026-03-02 23:27:26,987 INFO:Successfully extracted URL for gb5m7WFLIT4
+2026-03-02 23:27:26,988 INFO:127.0.0.1 - - [02/Mar/2026 23:27:26] "GET /get_stream_url?videoId=gb5m7WFLIT4 HTTP/1.1" 200 -
+2026-03-02 23:27:27,203 INFO:Received request for videoId: cM33s50feL4
+2026-03-02 23:27:27,268 INFO:Successfully extracted URL for gb5m7WFLIT4
+2026-03-02 23:27:27,281 INFO:127.0.0.1 - - [02/Mar/2026 23:27:27] "GET /get_stream_url?videoId=gb5m7WFLIT4 HTTP/1.1" 200 -
+2026-03-02 23:27:27,491 INFO:Received request for videoId: cM33s50feL4
+2026-03-02 23:27:28,749 INFO:Successfully extracted URL for gb5m7WFLIT4
+2026-03-02 23:27:28,749 INFO:127.0.0.1 - - [02/Mar/2026 23:27:28] "GET /get_stream_url?videoId=gb5m7WFLIT4 HTTP/1.1" 200 -
+2026-03-02 23:27:29,168 INFO:Received request for videoId: cM33s50feL4
+2026-03-02 23:27:29,848 INFO:Successfully extracted URL for cM33s50feL4
+2026-03-02 23:27:29,849 INFO:127.0.0.1 - - [02/Mar/2026 23:27:29] "GET /get_stream_url?videoId=cM33s50feL4 HTTP/1.1" 200 -
+2026-03-02 23:27:30,230 INFO:Successfully extracted URL for cM33s50feL4
+2026-03-02 23:27:30,231 INFO:127.0.0.1 - - [02/Mar/2026 23:27:30] "GET /get_stream_url?videoId=cM33s50feL4 HTTP/1.1" 200 -
+2026-03-02 23:27:31,674 INFO:Successfully extracted URL for cM33s50feL4
+2026-03-02 23:27:31,675 INFO:127.0.0.1 - - [02/Mar/2026 23:27:31] "GET /get_stream_url?videoId=cM33s50feL4 HTTP/1.1" 200 -
+2026-03-02 23:27:36,966 INFO:Received request for videoId: m8dV-KHBpEs
+2026-03-02 23:27:41,331 INFO:Successfully extracted URL for m8dV-KHBpEs
+2026-03-02 23:27:41,332 INFO:127.0.0.1 - - [02/Mar/2026 23:27:41] "GET /get_stream_url?videoId=m8dV-KHBpEs HTTP/1.1" 200 -
+2026-03-02 23:27:41,412 INFO:Received request for videoId: bYYjCa3Jztw
+2026-03-02 23:27:45,558 INFO:Successfully extracted URL for bYYjCa3Jztw
+2026-03-02 23:27:45,558 INFO:127.0.0.1 - - [02/Mar/2026 23:27:45] "GET /get_stream_url?videoId=bYYjCa3Jztw HTTP/1.1" 200 -
+2026-03-02 23:27:45,628 INFO:Received request for videoId: PwhyTsGW7_c
+2026-03-02 23:27:49,798 INFO:Successfully extracted URL for PwhyTsGW7_c
+2026-03-02 23:27:49,799 INFO:127.0.0.1 - - [02/Mar/2026 23:27:49] "GET /get_stream_url?videoId=PwhyTsGW7_c HTTP/1.1" 200 -
+2026-03-02 23:27:50,096 INFO:Received request for videoId: FiWklAVZldY
+2026-03-02 23:27:53,984 INFO:Successfully extracted URL for FiWklAVZldY
+2026-03-02 23:27:53,985 INFO:127.0.0.1 - - [02/Mar/2026 23:27:53] "GET /get_stream_url?videoId=FiWklAVZldY HTTP/1.1" 200 -
+2026-03-02 23:27:54,158 INFO:Received request for videoId: MBrNCbYkPCQ
+2026-03-02 23:27:58,288 INFO:Successfully extracted URL for MBrNCbYkPCQ
+2026-03-02 23:27:58,289 INFO:127.0.0.1 - - [02/Mar/2026 23:27:58] "GET /get_stream_url?videoId=MBrNCbYkPCQ HTTP/1.1" 200 -
+2026-03-02 23:27:58,532 INFO:Received request for videoId: WfHbRILc1I8
+2026-03-02 23:28:03,141 INFO:Successfully extracted URL for WfHbRILc1I8
+2026-03-02 23:28:03,142 INFO:127.0.0.1 - - [02/Mar/2026 23:28:03] "GET /get_stream_url?videoId=WfHbRILc1I8 HTTP/1.1" 200 -
+2026-03-02 23:28:03,202 INFO:Received request for videoId: pQcHGGOzUWU
+2026-03-02 23:28:06,251 INFO:Successfully extracted URL for pQcHGGOzUWU
+2026-03-02 23:28:06,251 INFO:127.0.0.1 - - [02/Mar/2026 23:28:06] "GET /get_stream_url?videoId=pQcHGGOzUWU HTTP/1.1" 200 -
+2026-03-02 23:28:06,506 INFO:Received request for videoId: GbfXdy2gXvg
+2026-03-02 23:28:10,826 INFO:Successfully extracted URL for GbfXdy2gXvg
+2026-03-02 23:28:10,827 INFO:127.0.0.1 - - [02/Mar/2026 23:28:10] "GET /get_stream_url?videoId=GbfXdy2gXvg HTTP/1.1" 200 -
+2026-03-02 23:28:10,991 INFO:Received request for videoId: gb5m7WFLIT4
+2026-03-02 23:28:17,692 INFO:Successfully extracted URL for gb5m7WFLIT4
+2026-03-02 23:28:17,692 INFO:127.0.0.1 - - [02/Mar/2026 23:28:17] "GET /get_stream_url?videoId=gb5m7WFLIT4 HTTP/1.1" 200 -
+2026-03-02 23:28:17,894 INFO:Received request for videoId: cM33s50feL4
+2026-03-02 23:28:20,374 INFO:Successfully extracted URL for cM33s50feL4
+2026-03-02 23:28:20,375 INFO:127.0.0.1 - - [02/Mar/2026 23:28:20] "GET /get_stream_url?videoId=cM33s50feL4 HTTP/1.1" 200 -
+2026-03-02 23:29:01,028 INFO:Received request for videoId: m8dV-KHBpEs
+2026-03-02 23:29:06,171 INFO:Successfully extracted URL for m8dV-KHBpEs
+2026-03-02 23:29:06,172 INFO:127.0.0.1 - - [02/Mar/2026 23:29:06] "GET /get_stream_url?videoId=m8dV-KHBpEs HTTP/1.1" 200 -
+2026-03-02 23:29:06,227 INFO:Received request for videoId: bYYjCa3Jztw
+2026-03-02 23:29:11,134 INFO:Successfully extracted URL for bYYjCa3Jztw
+2026-03-02 23:29:11,135 INFO:127.0.0.1 - - [02/Mar/2026 23:29:11] "GET /get_stream_url?videoId=bYYjCa3Jztw HTTP/1.1" 200 -
+2026-03-02 23:29:11,249 INFO:Received request for videoId: PwhyTsGW7_c
+2026-03-02 23:29:15,941 INFO:Successfully extracted URL for PwhyTsGW7_c
+2026-03-02 23:29:15,942 INFO:127.0.0.1 - - [02/Mar/2026 23:29:15] "GET /get_stream_url?videoId=PwhyTsGW7_c HTTP/1.1" 200 -
+2026-03-02 23:29:16,108 INFO:Received request for videoId: FiWklAVZldY
+2026-03-02 23:29:19,553 INFO:Successfully extracted URL for FiWklAVZldY
+2026-03-02 23:29:19,553 INFO:127.0.0.1 - - [02/Mar/2026 23:29:19] "GET /get_stream_url?videoId=FiWklAVZldY HTTP/1.1" 200 -
+2026-03-02 23:29:19,682 INFO:Received request for videoId: MBrNCbYkPCQ
+2026-03-02 23:29:23,713 INFO:Successfully extracted URL for MBrNCbYkPCQ
+2026-03-02 23:29:23,714 INFO:127.0.0.1 - - [02/Mar/2026 23:29:23] "GET /get_stream_url?videoId=MBrNCbYkPCQ HTTP/1.1" 200 -
+2026-03-02 23:29:23,764 INFO:Received request for videoId: WfHbRILc1I8
+2026-03-02 23:29:28,543 INFO:Successfully extracted URL for WfHbRILc1I8
+2026-03-02 23:29:28,544 INFO:127.0.0.1 - - [02/Mar/2026 23:29:28] "GET /get_stream_url?videoId=WfHbRILc1I8 HTTP/1.1" 200 -
+2026-03-02 23:29:28,626 INFO:Received request for videoId: pQcHGGOzUWU
+2026-03-02 23:29:32,247 INFO:Successfully extracted URL for pQcHGGOzUWU
+2026-03-02 23:29:32,248 INFO:127.0.0.1 - - [02/Mar/2026 23:29:32] "GET /get_stream_url?videoId=pQcHGGOzUWU HTTP/1.1" 200 -
+2026-03-02 23:29:32,320 INFO:Received request for videoId: GbfXdy2gXvg
+2026-03-02 23:29:36,188 INFO:Successfully extracted URL for GbfXdy2gXvg
+2026-03-02 23:29:36,188 INFO:127.0.0.1 - - [02/Mar/2026 23:29:36] "GET /get_stream_url?videoId=GbfXdy2gXvg HTTP/1.1" 200 -
+2026-03-02 23:29:36,244 INFO:Received request for videoId: gb5m7WFLIT4
+2026-03-02 23:29:41,227 INFO:Successfully extracted URL for gb5m7WFLIT4
+2026-03-02 23:29:41,227 INFO:127.0.0.1 - - [02/Mar/2026 23:29:41] "GET /get_stream_url?videoId=gb5m7WFLIT4 HTTP/1.1" 200 -
+2026-03-02 23:29:41,278 INFO:Received request for videoId: cM33s50feL4
+2026-03-02 23:29:46,786 INFO:Successfully extracted URL for cM33s50feL4
+2026-03-02 23:29:46,786 INFO:127.0.0.1 - - [02/Mar/2026 23:29:46] "GET /get_stream_url?videoId=cM33s50feL4 HTTP/1.1" 200 -
+2026-03-02 23:30:07,187 INFO:Received request for videoId: dQw4w9WgXcQ
+2026-03-02 23:30:11,792 INFO:Successfully extracted URL for dQw4w9WgXcQ
+2026-03-02 23:30:11,792 INFO:127.0.0.1 - - [02/Mar/2026 23:30:11] "GET /get_stream_url?videoId=dQw4w9WgXcQ HTTP/1.1" 200 -
