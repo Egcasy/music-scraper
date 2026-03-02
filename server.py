@@ -20,8 +20,10 @@ def get_best_audio_url(video_id):
         {'player_client': ['android'], 'player_skip': ['web', 'ios']},
         # 2. TV (previously worked well)
         {'player_client': ['tv'], 'player_skip': ['web', 'ios', 'android']},
-        # 3. Mobile Web
-        {'player_client': ['mweb'], 'player_skip': ['web', 'ios', 'android', 'tv']},
+        # 3. MediaConnect (newer bypass client)
+        {'player_client': ['mediaconnect'], 'player_skip': ['web', 'ios', 'android', 'tv']},
+        # 4. Web Embedded (requires Referer)
+        {'player_client': ['web_embedded'], 'player_skip': ['web', 'ios', 'android', 'tv', 'mediaconnect']},
     ]
     
     last_error = "Unknown error"
@@ -33,6 +35,8 @@ def get_best_audio_url(video_id):
         logging.info("Using cookies.txt for extraction")
 
     for config in configs:
+        referer = 'https://www.youtube.com/' if config['player_client'][0] == 'web_embedded' else None
+        
         ydl_opts = {
             'format': 'bestaudio/best',
             'quiet': True,
@@ -47,11 +51,16 @@ def get_best_audio_url(video_id):
                     'player_skip': config['player_skip'],
                 }
             },
-            'add_header': [
-                'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
-            ],
+            'http_headers': {
+                'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+                'Accept': '*/*',
+                'Accept-Language': 'en-US,en;q=0.9',
+            },
         }
         
+        if referer:
+            ydl_opts['http_headers']['Referer'] = referer
+            
         if has_cookies:
             ydl_opts['cookiefile'] = cookies_path
 
