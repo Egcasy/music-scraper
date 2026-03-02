@@ -13,38 +13,62 @@ app = Flask(__name__)
 
 def get_best_audio_url(video_id):
     url = f"https://www.youtube.com/watch?v={video_id}"
-    ydl_opts = {
-        'format': 'bestaudio/best',
-        'quiet': True,
-        'no_warnings': True,
-        'extract_flat': False,
-        'nocheckcertificate': True,
-        'ignoreerrors': False,
-        'logtostderr': False,
-        'extractor_args': {
-            'youtube': {
-                'player_client': ['tv', 'mweb', 'web_embedded'],
-                'player_skip': ['web', 'ios', 'android'],
-            }
-        },
-        'add_header': [
-            'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
-        ],
-    }
     
-    with yt_dlp.YoutubeDL(ydl_opts) as ydl:
+    # Sequence of clients to try
+    configs = [
+        # 1. Android (often most permissive)
+        {'player_client': ['android'], 'player_skip': ['web', 'ios']},
+        # 2. TV (previously worked well)
+        {'player_client': ['tv'], 'player_skip': ['web', 'ios', 'android']},
+        # 3. Mobile Web
+        {'player_client': ['mweb'], 'player_skip': ['web', 'ios', 'android', 'tv']},
+    ]
+    
+    last_error = "Unknown error"
+    
+    import os
+    cookies_path = 'cookies.txt'
+    has_cookies = os.path.exists(cookies_path)
+    if has_cookies:
+        logging.info("Using cookies.txt for extraction")
+
+    for config in configs:
+        ydl_opts = {
+            'format': 'bestaudio/best',
+            'quiet': True,
+            'no_warnings': True,
+            'extract_flat': False,
+            'nocheckcertificate': True,
+            'ignoreerrors': False,
+            'logtostderr': False,
+            'extractor_args': {
+                'youtube': {
+                    'player_client': config['player_client'],
+                    'player_skip': config['player_skip'],
+                }
+            },
+            'add_header': [
+                'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
+            ],
+        }
+        
+        if has_cookies:
+            ydl_opts['cookiefile'] = cookies_path
+
         try:
-            info = ydl.extract_info(url, download=False)
-            if not info:
-                return None, "No info extracted"
-            stream_url = info.get('url')
-            if not stream_url:
-                return None, "No URL in info"
-            return stream_url, None
+            with yt_dlp.YoutubeDL(ydl_opts) as ydl:
+                info = ydl.extract_info(url, download=False)
+                if info and info.get('url'):
+                    return info.get('url'), None
+                last_error = "No URL in info"
         except Exception as e:
-            error_msg = str(e)
-            print(f"yt-dlp error: {error_msg}")
-            return None, error_msg
+            last_error = str(e)
+            if "Sign in to confirm you're not a bot" not in last_error:
+                # If it's a different error, maybe the client is invalid, continue to next
+                logging.warning(f"Client {config['player_client']} failed: {last_error}")
+            continue
+            
+    return None, last_error
 
 @app.route('/get_stream_url', methods=['GET'])
 def get_stream_url():
