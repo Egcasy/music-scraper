@@ -23,12 +23,12 @@ def get_best_audio_url(video_id):
         'logtostderr': False,
         'extractor_args': {
             'youtube': {
-                'player_client': ['ios', 'android', 'web_embedded'],
-                'player_skip': ['web'],
+                'player_client': ['tv', 'mweb', 'web_embedded'],
+                'player_skip': ['web', 'ios', 'android'],
             }
         },
         'add_header': [
-            'User-Agent: Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.0 Mobile/15E148 Safari/604.1'
+            'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
         ],
     }
     
